@@ -6,11 +6,14 @@ import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const app = express()
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 // Middleware
 app.use(cors())
 app.use(express.json())
+
+// Serve static files from dist (Vue build output)
+app.use(express.static(path.join(__dirname, 'dist')))
 
 // Data directory path
 const dataDir = path.join(__dirname, 'data')
@@ -270,6 +273,13 @@ app.post('/api/wellbeing/activity', async (req, res) => {
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'Personal Management API is running' })
+})
+
+// Fallback: Serve index.html for all non-API routes (for Vue Router)
+app.get('*', (req, res) => {
+  if (!req.path.startsWith('/api')) {
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'))
+  }
 })
 
 // Start server

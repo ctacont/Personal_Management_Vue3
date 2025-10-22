@@ -1,5 +1,9 @@
 // API Service für Kommunikation mit dem Backend
-const API_BASE_URL = 'http://localhost:3000/api'
+// Dynamische URL basierend auf Environment
+const API_BASE_URL = 
+  import.meta.env.MODE === 'production'
+    ? '/api'  // Bei Production: relative URL (same host)
+    : 'http://localhost:3000/api'  // Bei Development: localhost
 
 // Generic fetch helper
 const fetchAPI = async (method, endpoint, data = null) => {
