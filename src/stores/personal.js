@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
 import { format, startOfDay } from 'date-fns'
+import { de } from 'date-fns/locale'
 import { apiService } from '../services/api'
 
 const today = startOfDay(new Date())
@@ -62,7 +63,7 @@ export const usePersonalStore = defineStore('personal', {
       return Math.round((sum / state.moods.length) * 10) / 10
     },
     
-    todayLabel: () => format(today, 'EEEE, dd. MMMM yyyy', { locale: undefined })
+    todayLabel: () => format(today, 'EEEE, dd.MM.yyyy', { locale: de })
   },
 
   actions: {

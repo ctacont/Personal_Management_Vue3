@@ -15,7 +15,12 @@
               <button @click="previousMonth" class="p-2 hover:bg-gray-200 rounded">
                 ← Vorheriger
               </button>
-              <h2 class="text-2xl font-bold">{{ currentMonthYear }}</h2>
+              <div class="flex items-center gap-4">
+                <h2 class="text-2xl font-bold">{{ currentMonthYear }}</h2>
+                <button @click="goToToday" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 font-medium text-sm">
+                  Heute
+                </button>
+              </div>
               <button @click="nextMonth" class="p-2 hover:bg-gray-200 rounded">
                 Nächster →
               </button>
@@ -266,6 +271,12 @@ export default {
       currentDate.value = new Date(currentDate.value.getFullYear(), currentDate.value.getMonth() + 1)
     }
 
+    const goToToday = () => {
+      currentDate.value = new Date()
+      selectedDate.value = new Date()
+      newEvent.value.date = format(new Date(), 'yyyy-MM-dd')
+    }
+
     const selectDate = (day) => {
       if (day.fullDate) {
         selectedDate.value = day.fullDate
@@ -335,6 +346,7 @@ export default {
       editingEvent,
       previousMonth,
       nextMonth,
+      goToToday,
       selectDate,
       isSelected,
       isToday,
