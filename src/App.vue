@@ -88,9 +88,9 @@ const activeCounts = computed(() => ({
               <span class="h-2 w-2 rounded-full bg-green-500"></span>
               <span>{{ store.todayLabel }}</span>
             </div>
-            <button class="rounded-full bg-primary-500 px-4 py-2 text-sm font-medium text-white hover:bg-primary-600">
+            <RouterLink to="/aufgaben" class="rounded-full bg-primary-500 px-4 py-2 text-sm font-medium text-white hover:bg-primary-600">
               Neue Aufgabe
-            </button>
+            </RouterLink>
           </div>
         </header>
         <main class="flex-1 overflow-y-auto px-4 py-6 sm:px-6 lg:px-10">
