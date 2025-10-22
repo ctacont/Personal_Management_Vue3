@@ -150,7 +150,7 @@
 
     <!-- Selected Date Events Modal -->
     <div v-if="selectedDate && selectedDateEvents.length > 0 && !editingEvent" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-      <div class="bg-white rounded-lg shadow-2xl p-8 max-w-2xl w-full" style="height: 90vh; overflow-y: auto;">
+      <div class="bg-white rounded-lg shadow-2xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         <h3 class="text-2xl font-bold mb-6">Termine am {{ formatDate(selectedDate) }}</h3>
         <div class="space-y-4">
           <div v-for="event in selectedDateEvents" :key="event.id" 
