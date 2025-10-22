@@ -499,12 +499,16 @@ app.get('*', (req, res) => {
 
 // Start server
 ensureDataDir().then(async () => {
-  // Initialize with default test data on every start (for demo purposes)
-  await initializeDefaultData()
+  // Initialize with default test data only on Render (Production)
+  if (process.env.NODE_ENV === 'production') {
+    await initializeDefaultData()
+    console.log(`🔄 Production mode: Test data will reset on server restart`)
+  } else {
+    console.log(`💻 Development mode: Using local data files`)
+  }
   
   app.listen(PORT, () => {
     console.log(`✅ Personal Management API server running on http://localhost:${PORT}`)
     console.log(`📁 Data directory: ${dataDir}`)
-    console.log(`🔄 Test data reset enabled - will reinitialize on server restart`)
   })
 })
