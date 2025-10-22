@@ -1,0 +1,52 @@
+{
+  "sleepEntries": [
+    {
+      "id": 1,
+      "date": "2025-10-19",
+      "hours": 7.5,
+      "quality": "Gut"
+    },
+    {
+      "id": 2,
+      "date": "2025-10-20",
+      "hours": 6.2,
+      "quality": "Mittelmäßig"
+    },
+    {
+      "id": 3,
+      "date": "2025-10-21",
+      "hours": 8.0,
+      "quality": "Sehr gut"
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "date": "2025-10-20",
+      "rating": 7,
+      "note": "Produktiver Tag, gutes Gefühl"
+    },
+    {
+      "id": 2,
+      "date": "2025-10-21",
+      "rating": 8,
+      "note": "Sehr gute Laune nach dem Sport"
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "date": "2025-10-19",
+      "type": "Laufen",
+      "duration": 45,
+      "intensity": "Mittel"
+    },
+    {
+      "id": 2,
+      "date": "2025-10-21",
+      "type": "Yoga",
+      "duration": 60,
+      "intensity": "Leicht"
+    }
+  ]
+}

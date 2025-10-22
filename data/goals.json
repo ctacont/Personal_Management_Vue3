@@ -1,0 +1,34 @@
+{
+  "goals": [
+    {
+      "id": 1,
+      "title": "Leadership-Zertifizierung abschließen",
+      "description": "Online-Kurs absolvieren und Zertifikat erhalten",
+      "category": "Karriere",
+      "priority": "Hoch",
+      "progress": 85,
+      "deadline": "2025-12-01",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Halbmarathon laufen",
+      "description": "21km Lauf in unter 2 Stunden",
+      "category": "Gesundheit",
+      "priority": "Hoch",
+      "progress": 60,
+      "deadline": "2025-12-21",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "10.000€ sparen",
+      "description": "Notgroschen aufbauen",
+      "category": "Finanzen",
+      "priority": "Mittel",
+      "progress": 35,
+      "deadline": "2025-12-31",
+      "completed": false
+    }
+  ]
+}

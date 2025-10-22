@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "id": "e1",
+      "title": "Leadership Meeting",
+      "date": "2025-10-23",
+      "time": "09:00",
+      "category": "Arbeit",
+      "description": "Strategiemeeting mit dem Team",
+      "location": "Konferenzraum 3"
+    },
+    {
+      "id": "e2",
+      "title": "Arzttermin",
+      "date": "2025-10-25",
+      "time": "08:30",
+      "category": "Gesundheit",
+      "description": "Routineuntersuchung",
+      "location": "Hausarzt Müller"
+    },
+    {
+      "id": "e3",
+      "title": "Yoga-Kurs",
+      "date": "2025-10-22",
+      "time": "18:00",
+      "category": "Freizeit",
+      "description": "Wöchentlicher Yoga-Kurs",
+      "location": "Studio Balance"
+    },
+    {
+      "date": "2025-10-22",
+      "time": "17:02",
+      "title": "eeeeeee",
+      "category": "Arbeit",
+      "description": "ererrwerewr  r",
+      "id": 1761138013907
+    },
+    {
+      "date": "2025-09-25",
+      "time": "18:54",
+      "title": "ghghf",
+      "category": "Gesundheit",
+      "description": "hgfh",
+      "id": 1761148420580
+    }
+  ]
+}

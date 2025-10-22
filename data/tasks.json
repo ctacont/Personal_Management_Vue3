@@ -1,0 +1,55 @@
+{
+  "tasks": [
+    {
+      "id": "t1",
+      "title": "Quartalsplanung vorbereiten",
+      "description": "Präsentation für das Strategie-Meeting erstellen",
+      "dueDate": "2025-10-24",
+      "category": "Arbeit",
+      "priority": "Hoch",
+      "status": "In Bearbeitung",
+      "progress": 70,
+      "tags": [
+        "Präsentation",
+        "Management"
+      ]
+    },
+    {
+      "id": "t2",
+      "title": "Fitness-Check buchen",
+      "description": "Termin im Fitnessstudio vereinbaren",
+      "dueDate": "2025-10-26",
+      "category": "Gesundheit",
+      "priority": "Mittel",
+      "status": "Offen",
+      "progress": 10,
+      "tags": [
+        "Routine"
+      ]
+    },
+    {
+      "id": "t3",
+      "title": "Geburtstagsgeschenk besorgen",
+      "description": "Geschenk für Mia organisieren",
+      "dueDate": "2025-10-21",
+      "category": "Privat",
+      "priority": "Hoch",
+      "status": "Überfällig",
+      "progress": 0,
+      "tags": [
+        "Familie"
+      ]
+    },
+    {
+      "id": "t1761137988898",
+      "title": "hasan test",
+      "description": "hasan test beschr",
+      "dueDate": "2025-10-22",
+      "category": "arbeitttttt",
+      "priority": "Mittel",
+      "status": "Offen",
+      "progress": 0,
+      "tags": []
+    }
+  ]
+}

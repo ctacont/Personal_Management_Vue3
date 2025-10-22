@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "id": 1729608000000,
+      "title": "Meeting-Notizen Marketing",
+      "content": "Fokus auf Conversion-Optimierung, nächste Schritte definieren. Budget erhöhen für Q4 Kampagnen.",
+      "category": "Arbeit",
+      "date": "2025-10-20",
+      "tags": ["Arbeit", "Marketing"]
+    },
+    {
+      "id": 1729521600000,
+      "title": "Ideen für Urlaub",
+      "content": "Wandern in Südtirol, Alternative: Städtereise nach Lissabon. Portugal interessant für nächste Sommerferien.",
+      "category": "Persönlich",
+      "date": "2025-10-15",
+      "tags": ["Freizeit", "Planung"]
+    },
+    {
+      "id": 1729608100000,
+      "title": "Projektideen",
+      "content": "Neues Produktfeature brainstorming. User-Experience verbessern.",
+      "category": "Ideen",
+      "date": "2025-10-22",
+      "tags": ["Produkt", "Entwicklung"]
+    }
+  ]
+}

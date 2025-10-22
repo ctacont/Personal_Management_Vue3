@@ -1,0 +1,52 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "type": "Einnahme",
+      "amount": 4200,
+      "description": "Gehalt Oktober",
+      "category": "Gehalt",
+      "date": "2025-10-20"
+    },
+    {
+      "id": 2,
+      "type": "Einnahme",
+      "amount": 850,
+      "description": "Freelance-Projekt Backend",
+      "category": "Freelance",
+      "date": "2025-10-12"
+    },
+    {
+      "id": 3,
+      "type": "Ausgabe",
+      "amount": 1200,
+      "description": "Miete Oktober",
+      "category": "Wohnung",
+      "date": "2025-10-21"
+    },
+    {
+      "id": 4,
+      "type": "Ausgabe",
+      "amount": 220,
+      "description": "Lebensmittel einkaufen",
+      "category": "Lebensmittel",
+      "date": "2025-10-19"
+    },
+    {
+      "id": 5,
+      "type": "Ausgabe",
+      "amount": 60,
+      "description": "Fitness-Studio",
+      "category": "Freizeit",
+      "date": "2025-10-18"
+    },
+    {
+      "type": "Ausgabe",
+      "amount": -0.06,
+      "description": "tre",
+      "category": "Lebensmittel",
+      "date": "2025-10-22",
+      "id": 1761138133275
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Laura König",
+      "email": "laura.koenig@innova.de",
+      "phone": "+49 30 123456",
+      "company": "Innova GmbH",
+      "category": "Arbeit",
+      "notes": "HR Director, zuständig für Recruiting"
+    },
+    {
+      "id": 2,
+      "name": "Mia Sommer",
+      "email": "mia.sommer@email.de",
+      "phone": "+49 170 987654",
+      "company": "Freelancer",
+      "category": "Freunde",
+      "notes": "Grafikdesignerin, arbeitet an freien Projekten"
+    },
+    {
+      "id": 3,
+      "name": "Michael Bauer",
+      "email": "m.bauer@techcorp.de",
+      "phone": "+49 40 555123",
+      "company": "TechCorp",
+      "category": "Geschäft",
+      "notes": "Projektmanager, Kontakt für B2B Projekte"
+    }
+  ]
+}
