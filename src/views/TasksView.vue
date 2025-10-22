@@ -85,7 +85,7 @@ const deleteTask = async (id) => {
     <section class="grid gap-6 lg:grid-cols-[2fr_1fr]">
       <div class="rounded-3xl bg-white p-6 shadow-sm">
         <h2 class="text-lg font-semibold text-gray-900">Neue Aufgabe hinzufügen</h2>
-        <form class="mt-6 grid gap-4" @submit.prevent="createTask">
+        <form class="mt-6 grid gap-4">
           <div class="grid gap-2">
             <label class="text-sm font-medium text-gray-600">Titel</label>
             <input v-model="newTask.title" class="rounded-xl border border-gray-200 px-4 py-2 text-sm focus:border-primary-400 focus:outline-none" placeholder="Aufgabe" />
@@ -112,7 +112,7 @@ const deleteTask = async (id) => {
               <input v-model="newTask.dueDate" type="date" class="rounded-xl border border-gray-200 px-4 py-2 text-sm focus:border-primary-400 focus:outline-none" />
             </div>
           </div>
-          <button type="submit" class="rounded-full bg-primary-500 px-5 py-2 text-sm font-semibold text-white hover:bg-primary-600">Aufgabe erstellen</button>
+          <button type="button" @click="createTask" class="rounded-full bg-primary-500 px-5 py-2 text-sm font-semibold text-white hover:bg-primary-600">Aufgabe erstellen</button>
         </form>
       </div>
       <div class="rounded-3xl bg-white p-6 shadow-sm">
