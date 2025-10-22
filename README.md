@@ -1,326 +1,650 @@
-# Personal Management System 📋<<<<<<< HEAD
-
-# Personal Management System 📋
-
-Eine vollständige Personal-Management-Anwendung built mit **Vue 3**, **Tailwind CSS**, **Pinia** und **Express.js**.
-
-Eine vollständige Personal-Management-Anwendung built mit **Vue 3**, **Tailwind CSS**, **Pinia** und **Express.js**.
-
----
-
-## Features ✨
-
-## 🚀 LIVE DEMO - JETZT TESTEN!
-
-- **Dashboard** - Übersicht mit Statistiken und Quick-Actions
-
-### **👉 [https://personal-management-vue3.onrender.com/](https://personal-management-vue3.onrender.com/) 👈**- **Aufgabenverwaltung** - Erstelle, bearbeite und verwalte deine Tasks
-
-- **Kalender** - Verwende Termine und Events übersichtlich
-
-**Teste die App direkt im Browser - kein Setup nötig!**- **Notizen** - Halte deine Gedanken und Ideen fest
-
-- **Kontakte** - Speichere und organisiere deine Kontakte
-
-### ⚠️ Wichtig für Testzwecke:- **Finanzen** - Tracke Einnahmen, Ausgaben und Budgets
-
-- **Ziele** - Setze persönliche Ziele und verfolge deinen Fortschritt
-
-Die Demo läuft auf einem kostenlosen Server mit **Test-Daten**:- **Wohlbefinden** - Tracke Schlaf, Stimmung und Aktivitäten
+# Personal Management System 📋# Personal Management System 📋<<<<<<< HEAD
 
 
 
-- ✅ Du kannst **neue Daten erstellen und bearbeiten**## Tech Stack 🛠️
+Eine vollständige Personal-Management-Anwendung built mit **Vue 3**, **Tailwind CSS**, **Pinia** und **Express.js**.# Personal Management System 📋
+
+
+
+---Eine vollständige Personal-Management-Anwendung built mit **Vue 3**, **Tailwind CSS**, **Pinia** und **Express.js**.
+
+
+
+## 🚀 LIVE DEMO - JETZT TESTEN!Eine vollständige Personal-Management-Anwendung built mit **Vue 3**, **Tailwind CSS**, **Pinia** und **Express.js**.
+
+
+
+### **👉 [https://personal-management-vue3.onrender.com/](https://personal-management-vue3.onrender.com/) 👈**---
+
+
+
+**Teste die App direkt im Browser - kein Setup nötig!**## Features ✨
+
+
+
+### ⚠️ Wichtig für Testzwecke:## 🚀 LIVE DEMO - JETZT TESTEN!
+
+
+
+Die Demo läuft auf einem kostenlosen Server mit **Test-Daten**:- **Dashboard** - Übersicht mit Statistiken und Quick-Actions
+
+
+
+- ✅ Du kannst **neue Daten erstellen und bearbeiten**### **👉 [https://personal-management-vue3.onrender.com/](https://personal-management-vue3.onrender.com/) 👈**- **Aufgabenverwaltung** - Erstelle, bearbeite und verwalte deine Tasks
 
 - ✅ Du kannst **Daten speichern** (solange die Session läuft)
 
-- ⚠️ Beim **Neuladen/Refresh** der Seite werden **alle benutzerdefinierten Daten gelöscht**### Frontend
+- ⚠️ Beim **Neuladen/Refresh** der Seite werden **alle benutzerdefinierten Daten gelöscht**- **Kalender** - Verwende Termine und Events übersichtlich
 
-- ♻️ Die **Original-Testdaten werden wiederhergestellt**- **Vue 3** - Progressive JavaScript Framework
+- ♻️ Die **Original-Testdaten werden wiederhergestellt**
 
-- **Vite** - Next Generation Frontend Tooling
+**Teste die App direkt im Browser - kein Setup nötig!**- **Notizen** - Halte deine Gedanken und Ideen fest
 
-**Das ist beabsichtigt** - die App soll getestet werden, ohne Daten dauerhaft zu speichern.- **Pinia** - State Management
-
-- **Vue Router** - Routing
-
-**Für persistente Datenbank** → Lokal installieren und selbst hosten!- **Tailwind CSS** - Utility-First CSS Framework
-
-- **date-fns** - Modern Date Utility Library
-
----
-
-### Backend
-
-## Features ✨- **Node.js** - JavaScript Runtime
-
-- **Express.js** - Web Framework
-
-- **Dashboard** - Übersicht mit Statistiken und Quick-Actions- **CORS** - Cross-Origin Resource Sharing
-
-- **Aufgabenverwaltung** - Erstelle, bearbeite und verwalte deine Tasks- **File System API** - JSON Data Persistence
-
-- **Kalender** - Verwalte Termine und Events übersichtlich
-
-- **Notizen** - Halte deine Gedanken und Ideen fest## Installation 🚀
+**Das ist beabsichtigt** - die App soll getestet werden, ohne Daten dauerhaft zu speichern.
 
 - **Kontakte** - Speichere und organisiere deine Kontakte
 
-- **Finanzen** - Tracke Einnahmen, Ausgaben und Budgets### Voraussetzungen
+**Für persistente Datenbank** → Lokal installieren und selbst hosten!
 
-- **Ziele** - Setze persönliche Ziele und verfolge deinen Fortschritt- Node.js >= 14.0
-
-- **Wohlbefinden** - Tracke Schlaf, Stimmung und Aktivitäten- npm oder yarn
-
-
-
----### Setup
-
-
-
-## Tech Stack 🛠️1. **Repository klonen**
-
-```bash
-
-### Frontendgit clone https://github.com/YOUR_USERNAME/Personal_Management_Vue3.git
-
-- **Vue 3** - Progressive JavaScript Frameworkcd Personal_Management_Vue3
-
-- **Vite** - Next Generation Frontend Tooling```
-
-- **Pinia** - State Management
-
-- **Vue Router** - Routing2. **Dependencies installieren**
-
-- **Tailwind CSS** - Utility-First CSS Framework```bash
-
-- **date-fns** - Modern Date Utility Librarynpm install
-
-```
-
-### Backend
-
-- **Node.js** - JavaScript Runtime3. **Development Servers starten**
-
-- **Express.js** - Web Framework
-
-- **CORS** - Cross-Origin Resource SharingOption A - Beide Server zusammen:
-
-- **File System API** - JSON Data Persistence```bash
-
-npm run dev:all
-
-### Hosting```
-
-- **Render.com** - Cloud Deployment
-
-Option B - Einzeln:
-
----```bash
-
-# Terminal 1: Frontend (Vite)
-
-## 🖥️ Lokal Installieren & Entwickelnnpm run dev
-
-
-
-### Voraussetzungen# Terminal 2: Backend (Express)
-
-- Node.js >= 14.0npm run server
-
-- npm oder yarn```
-
-- Git
-
-4. **Im Browser öffnen**
-
-### Installation```
-
-http://localhost:5173
-
-1. **Repository klonen**```
-
-```bash
-
-git clone https://github.com/ctacont/Personal_Management_Vue3.git## Verwendung 📖
-
-cd Personal_Management_Vue3
-
-```### Frontend
-
-- **Vite Dev Server**: http://localhost:5173
-
-2. **Dependencies installieren**- **Hot Module Replacement**: Änderungen werden sofort aktualisiert
-
-```bash
-
-npm install### Backend API
-
-```- **API Server**: http://localhost:3000
-
-- **Health Check**: http://localhost:3000/api/health
-
-3. **Development Servers starten**
-
-## Datenpersistenz 💾
-
-Option A - Beide Server zusammen:
-
-```bashAlle Daten werden in JSON-Dateien im `/data` Verzeichnis gespeichert:
-
-npm run dev:all- `tasks.json` - Aufgaben
-
-```- `events.json` - Termine
-
-- `notes.json` - Notizen
-
-Option B - Einzeln:- `contacts.json` - Kontakte
-
-```bash- `transactions.json` - Transaktionen
-
-# Terminal 1: Frontend (Vite)- `goals.json` - Ziele
-
-npm run dev- `wellbeing.json` - Wohlbefinden
-
-
-
-# Terminal 2: Backend (Express)## API Endpoints 🔌
-
-npm run server
-
-```### Tasks
-
-- `GET /api/tasks` - Alle Tasks abrufen
-
-4. **Im Browser öffnen**- `POST /api/tasks` - Neue Task erstellen
-
-```- `PUT /api/tasks/:id` - Task aktualisieren
-
-http://localhost:5173- `DELETE /api/tasks/:id` - Task löschen
-
-```
-
-### Events
-
----- `GET /api/events` - Alle Events abrufen
-
-- `POST /api/events` - Neues Event erstellen
-
-## Verwendung 📖- `PUT /api/events/:id` - Event aktualisieren
-
-- `DELETE /api/events/:id` - Event löschen
-
-### Frontend Dev Server
-
-- **Vite Dev Server**: http://localhost:5173_(Ähnliche Endpoints für Notes, Contacts, Transactions, Goals und Wellbeing)_
-
-- **Hot Module Replacement**: Änderungen werden sofort aktualisiert
-
-## Struktur 📁
-
-### Backend API (lokal)
-
-- **API Server**: http://localhost:3000```
-
-- **Health Check**: http://localhost:3000/api/healthPersonal_Management_Vue3/
-
-├── data/                    # JSON Datendateien
-
----├── public/                  # Statische Assets
-
-├── src/
-
-## Datenpersistenz 💾│   ├── components/         # Vue-Komponenten
-
-│   ├── views/              # Seiten-Komponenten
-
-Daten werden in JSON-Dateien im `/data` Verzeichnis gespeichert:│   ├── stores/             # Pinia State Management
-
-- `tasks.json` - Aufgaben│   ├── services/           # API Service Layer
-
-- `events.json` - Termine│   ├── router/             # Vue Router Config
-
-- `notes.json` - Notizen│   ├── App.vue             # Root Component
-
-- `contacts.json` - Kontakte│   └── main.js             # Entry Point
-
-- `transactions.json` - Transaktionen├── server.js               # Express Server
-
-- `goals.json` - Ziele├── vite.config.js          # Vite Config
-
-- `wellbeing.json` - Wohlbefinden├── tailwind.config.js      # Tailwind Config
-
-└── package.json            # Abhängigkeiten
-
-Bei lokaler Nutzung: **Daten bleiben persistent**```
-
-Bei Online-Demo (Render): **Daten werden bei Refresh zurückgesetzt**
-
-## Entwicklung 👨‍💻
+### ⚠️ Wichtig für Testzwecke:- **Finanzen** - Tracke Einnahmen, Ausgaben und Budgets
 
 ---
 
-### Neue Features hinzufügen
+- **Ziele** - Setze persönliche Ziele und verfolge deinen Fortschritt
 
-## API Endpoints 🔌
+## Features ✨
 
-1. Backend Endpoint in `server.js` erstellen
+Die Demo läuft auf einem kostenlosen Server mit **Test-Daten**:- **Wohlbefinden** - Tracke Schlaf, Stimmung und Aktivitäten
 
-### Tasks2. API Service in `src/services/api.js` erweitern
+- **Dashboard** - Übersicht mit Statistiken und Quick-Actions
 
-- `GET /api/tasks` - Alle Tasks abrufen3. Pinia Store Action in `src/stores/personal.js` hinzufügen
+- **Aufgabenverwaltung** - Erstelle, bearbeite und verwalte deine Tasks
 
-- `POST /api/tasks` - Neue Task erstellen4. Vue Komponente in `src/views/` erstellen
+- **Kalender** - Verwalte Termine und Events übersichtlich
 
-- `PUT /api/tasks/:id` - Task aktualisieren5. Route in `src/router/index.js` registrieren
+- **Notizen** - Halte deine Gedanken und Ideen fest- ✅ Du kannst **neue Daten erstellen und bearbeiten**## Tech Stack 🛠️
 
-- `DELETE /api/tasks/:id` - Task löschen
+- **Kontakte** - Speichere und organisiere deine Kontakte
 
-### Best Practices
+- **Finanzen** - Tracke Einnahmen, Ausgaben und Budgets- ✅ Du kannst **Daten speichern** (solange die Session läuft)
 
-### Events, Notes, Contacts, Transactions, Goals, Wellbeing- Verwende `<script setup>` Syntax in Vue 3
+- **Ziele** - Setze persönliche Ziele und verfolge deinen Fortschritt
 
-Ähnliche REST API Endpoints verfügbar- Nutze Pinia für State Management
-
-- Implementiere Fehlerbehandlung in API Calls
-
----- Teste auf verschiedenen Bildschirmgrößen
+- **Wohlbefinden** - Tracke Schlaf, Stimmung und Aktivitäten- ⚠️ Beim **Neuladen/Refresh** der Seite werden **alle benutzerdefinierten Daten gelöscht**### Frontend
 
 
 
-## Projektstruktur 📁## GitHub Release 📤
+---- ♻️ Die **Original-Testdaten werden wiederhergestellt**- **Vue 3** - Progressive JavaScript Framework
 
 
 
-```### Setup für GitHub
+## Tech Stack 🛠️- **Vite** - Next Generation Frontend Tooling
 
-Personal_Management_Vue3/
 
-├── data/                    # JSON Datendateien1. **Git initialisieren (falls nicht bereits geschehen)**
 
-├── dist/                    # Production Build```bash
+### Frontend**Das ist beabsichtigt** - die App soll getestet werden, ohne Daten dauerhaft zu speichern.- **Pinia** - State Management
 
-├── public/                  # Statische Assetsgit init
+- **Vue 3** - Progressive JavaScript Framework
 
-├── src/git add .
+- **Vite** - Next Generation Frontend Tooling- **Vue Router** - Routing
 
-│   ├── components/         # Vue-Komponentengit commit -m "Initial commit: Personal Management System"
+- **Pinia** - State Management
 
-│   ├── views/              # Seiten-Komponenten```
+- **Vue Router** - Routing**Für persistente Datenbank** → Lokal installieren und selbst hosten!- **Tailwind CSS** - Utility-First CSS Framework
+
+- **Tailwind CSS** - Utility-First CSS Framework
+
+- **date-fns** - Modern Date Utility Library- **date-fns** - Modern Date Utility Library
+
+
+
+### Backend---
+
+- **Node.js** - JavaScript Runtime
+
+- **Express.js** - Web Framework### Backend
+
+- **CORS** - Cross-Origin Resource Sharing
+
+- **File System API** - JSON Data Persistence## Features ✨- **Node.js** - JavaScript Runtime
+
+
+
+### Hosting- **Express.js** - Web Framework
+
+- **Render.com** - Cloud Deployment
+
+- **Dashboard** - Übersicht mit Statistiken und Quick-Actions- **CORS** - Cross-Origin Resource Sharing
+
+---
+
+- **Aufgabenverwaltung** - Erstelle, bearbeite und verwalte deine Tasks- **File System API** - JSON Data Persistence
+
+## 🖥️ Lokal Installieren & Entwickeln
+
+- **Kalender** - Verwalte Termine und Events übersichtlich
+
+### Voraussetzungen
+
+- Node.js >= 14.0- **Notizen** - Halte deine Gedanken und Ideen fest## Installation 🚀
+
+- npm oder yarn
+
+- Git- **Kontakte** - Speichere und organisiere deine Kontakte
+
+
+
+### Installation- **Finanzen** - Tracke Einnahmen, Ausgaben und Budgets### Voraussetzungen
+
+
+
+1. **Repository klonen**- **Ziele** - Setze persönliche Ziele und verfolge deinen Fortschritt- Node.js >= 14.0
+
+```bash
+
+git clone https://github.com/ctacont/Personal_Management_Vue3.git- **Wohlbefinden** - Tracke Schlaf, Stimmung und Aktivitäten- npm oder yarn
+
+cd Personal_Management_Vue3
+
+```
+
+
+
+2. **Dependencies installieren**---### Setup
+
+```bash
+
+npm install
+
+```
+
+## Tech Stack 🛠️1. **Repository klonen**
+
+3. **Development Servers starten**
+
+```bash
+
+Option A - Beide Server zusammen:
+
+```bash### Frontendgit clone https://github.com/YOUR_USERNAME/Personal_Management_Vue3.git
+
+npm run dev:all
+
+```- **Vue 3** - Progressive JavaScript Frameworkcd Personal_Management_Vue3
+
+
+
+Option B - Einzeln:- **Vite** - Next Generation Frontend Tooling```
+
+```bash
+
+# Terminal 1: Frontend (Vite)- **Pinia** - State Management
+
+npm run dev
+
+- **Vue Router** - Routing2. **Dependencies installieren**
+
+# Terminal 2: Backend (Express)
+
+npm run server- **Tailwind CSS** - Utility-First CSS Framework```bash
+
+```
+
+- **date-fns** - Modern Date Utility Librarynpm install
+
+4. **Im Browser öffnen**
+
+``````
+
+http://localhost:5173
+
+```### Backend
+
+
+
+---- **Node.js** - JavaScript Runtime3. **Development Servers starten**
+
+
+
+## Verwendung 📖- **Express.js** - Web Framework
+
+
+
+### Frontend Dev Server- **CORS** - Cross-Origin Resource SharingOption A - Beide Server zusammen:
+
+- **Vite Dev Server**: http://localhost:5173
+
+- **Hot Module Replacement**: Änderungen werden sofort aktualisiert- **File System API** - JSON Data Persistence```bash
+
+
+
+### Backend API (lokal)npm run dev:all
+
+- **API Server**: http://localhost:3000
+
+- **Health Check**: http://localhost:3000/api/health### Hosting```
+
+
+
+---- **Render.com** - Cloud Deployment
+
+
+
+## Datenpersistenz 💾Option B - Einzeln:
+
+
+
+Daten werden in JSON-Dateien im `/data` Verzeichnis gespeichert:---```bash
+
+- `tasks.json` - Aufgaben
+
+- `events.json` - Termine# Terminal 1: Frontend (Vite)
+
+- `notes.json` - Notizen
+
+- `contacts.json` - Kontakte## 🖥️ Lokal Installieren & Entwickelnnpm run dev
+
+- `transactions.json` - Transaktionen
+
+- `goals.json` - Ziele
+
+- `wellbeing.json` - Wohlbefinden
+
+### Voraussetzungen# Terminal 2: Backend (Express)
+
+Bei lokaler Nutzung: **Daten bleiben persistent**
+
+Bei Online-Demo (Render): **Daten werden bei Refresh zurückgesetzt**- Node.js >= 14.0npm run server
+
+
+
+---- npm oder yarn```
+
+
+
+## API Endpoints 🔌- Git
+
+
+
+### Tasks4. **Im Browser öffnen**
+
+- `GET /api/tasks` - Alle Tasks abrufen
+
+- `POST /api/tasks` - Neue Task erstellen### Installation```
+
+- `PUT /api/tasks/:id` - Task aktualisieren
+
+- `DELETE /api/tasks/:id` - Task löschenhttp://localhost:5173
+
+
+
+### Events, Notes, Contacts, Transactions, Goals, Wellbeing1. **Repository klonen**```
+
+Ähnliche REST API Endpoints verfügbar
+
+```bash
+
+---
+
+git clone https://github.com/ctacont/Personal_Management_Vue3.git## Verwendung 📖
+
+## Projektstruktur 📁
+
+cd Personal_Management_Vue3
+
+```
+
+Personal_Management_Vue3/```### Frontend
+
+├── data/                    # JSON Datendateien
+
+├── dist/                    # Production Build- **Vite Dev Server**: http://localhost:5173
+
+├── public/                  # Statische Assets
+
+├── src/2. **Dependencies installieren**- **Hot Module Replacement**: Änderungen werden sofort aktualisiert
+
+│   ├── components/         # Vue-Komponenten
+
+│   ├── views/              # Seiten-Komponenten```bash
 
 │   ├── stores/             # Pinia State Management
 
+│   ├── services/           # API Service Layernpm install### Backend API
+
+│   ├── router/             # Vue Router Config
+
+│   ├── App.vue             # Root Component```- **API Server**: http://localhost:3000
+
+│   ├── main.js             # Entry Point
+
+│   └── style.css           # Global Styles- **Health Check**: http://localhost:3000/api/health
+
+├── server.js               # Express Server
+
+├── vite.config.js          # Vite Konfiguration3. **Development Servers starten**
+
+├── tailwind.config.js      # Tailwind Konfiguration
+
+├── package.json            # Abhängigkeiten## Datenpersistenz 💾
+
+└── README.md               # Diese Datei
+
+```Option A - Beide Server zusammen:
+
+
+
+---```bashAlle Daten werden in JSON-Dateien im `/data` Verzeichnis gespeichert:
+
+
+
+## Entwicklung 👨‍💻npm run dev:all- `tasks.json` - Aufgaben
+
+
+
+### Neue Features hinzufügen```- `events.json` - Termine
+
+
+
+1. Backend Endpoint in `server.js` erstellen- `notes.json` - Notizen
+
+2. API Service in `src/services/api.js` erweitern
+
+3. Pinia Store Action in `src/stores/personal.js` hinzufügenOption B - Einzeln:- `contacts.json` - Kontakte
+
+4. Vue Komponente in `src/views/` erstellen
+
+5. Route in `src/router/index.js` registrieren```bash- `transactions.json` - Transaktionen
+
+
+
+### Best Practices# Terminal 1: Frontend (Vite)- `goals.json` - Ziele
+
+- Verwende `<script setup>` Syntax in Vue 3
+
+- Nutze Pinia für zentrales State Managementnpm run dev- `wellbeing.json` - Wohlbefinden
+
+- Implementiere Fehlerbehandlung in API Calls
+
+- Teste auf verschiedenen Bildschirmgrößen (Responsive Design)
+
+
+
+---# Terminal 2: Backend (Express)## API Endpoints 🔌
+
+
+
+## Production Build 🏗️npm run server
+
+
+
+```bash```### Tasks
+
+# Frontend bauen
+
+npm run build- `GET /api/tasks` - Alle Tasks abrufen
+
+
+
+# Output wird in `dist/` generiert4. **Im Browser öffnen**- `POST /api/tasks` - Neue Task erstellen
+
+```
+
+```- `PUT /api/tasks/:id` - Task aktualisieren
+
+---
+
+http://localhost:5173- `DELETE /api/tasks/:id` - Task löschen
+
+## Deployment auf Render.com 🚀
+
+```
+
+Die App ist bereits live deployed auf Render.com!
+
+### Events
+
+**Live URL:**
+
+```---- `GET /api/events` - Alle Events abrufen
+
+https://personal-management-vue3.onrender.com/
+
+```- `POST /api/events` - Neues Event erstellen
+
+
+
+Für eigenes Deployment:## Verwendung 📖- `PUT /api/events/:id` - Event aktualisieren
+
+1. Gehe zu https://render.com
+
+2. Verbinde dein GitHub Repository- `DELETE /api/events/:id` - Event löschen
+
+3. Render baut und deployt automatisch
+
+### Frontend Dev Server
+
+---
+
+- **Vite Dev Server**: http://localhost:5173_(Ähnliche Endpoints für Notes, Contacts, Transactions, Goals und Wellbeing)_
+
+## GitHub & Versionskontrolle 📚
+
+- **Hot Module Replacement**: Änderungen werden sofort aktualisiert
+
+### Git Workflow
+
+```bash## Struktur 📁
+
+# Änderungen machen
+
+git add .### Backend API (lokal)
+
+git commit -m "Deine Nachricht"
+
+git push origin main- **API Server**: http://localhost:3000```
+
+```
+
+- **Health Check**: http://localhost:3000/api/healthPersonal_Management_Vue3/
+
+### Release erstellen
+
+1. Gehe auf GitHub Releases├── data/                    # JSON Datendateien
+
+2. Klick "Create a new release"
+
+3. Tag: `v1.0.0`---├── public/                  # Statische Assets
+
+4. Publish
+
+├── src/
+
+---
+
+## Datenpersistenz 💾│   ├── components/         # Vue-Komponenten
+
+## 📜 Lizenz & Urheberrecht
+
+│   ├── views/              # Seiten-Komponenten
+
+### **⚖️ RECHTLICHER HINWEIS - BITTE LESEN**
+
+Daten werden in JSON-Dateien im `/data` Verzeichnis gespeichert:│   ├── stores/             # Pinia State Management
+
+```
+
+© 2025 Hasan Yüksel- `tasks.json` - Aufgaben│   ├── services/           # API Service Layer
+
+Alle Rechte vorbehalten.
+
+```- `events.json` - Termine│   ├── router/             # Vue Router Config
+
+
+
+**Diese Software unterliegt dem Urheberrecht und ist geschützt durch geltendes Recht.**- `notes.json` - Notizen│   ├── App.vue             # Root Component
+
+
+
+Die Personal Management System Anwendung, einschließlich aller zugehörigen Quellcodes, Designs, Funktionalitäten, Dokumentationen und Materialien, ist **ausschließliches geistiges Eigentum** von **Hasan Yüksel**.- `contacts.json` - Kontakte│   └── main.js             # Entry Point
+
+
+
+---- `transactions.json` - Transaktionen├── server.js               # Express Server
+
+
+
+### ✅ Erlaubte Nutzung- `goals.json` - Ziele├── vite.config.js          # Vite Config
+
+
+
+- ✅ **Kostenlose Nutzung** des öffentlichen Live-Demos zum Testen und Evaluieren- `wellbeing.json` - Wohlbefinden├── tailwind.config.js      # Tailwind Config
+
+- ✅ **Persönliches Lernen** - Eigene Forks und private Entwicklung für Bildungszwecke
+
+- ✅ **Code-Analyse** - Einsicht und Verständnis für nicht-kommerzielle Zwecke└── package.json            # Abhängigkeiten
+
+
+
+---Bei lokaler Nutzung: **Daten bleiben persistent**```
+
+
+
+### ❌ Nicht erlaubte NutzungBei Online-Demo (Render): **Daten werden bei Refresh zurückgesetzt**
+
+
+
+- ❌ **Kommerzielle Verwendung** - Die Anwendung oder deren Komponenten dürfen nicht für kommerzielle oder gewinnorientierte Zwecke genutzt werden## Entwicklung 👨‍💻
+
+- ❌ **Wiederveröffentlichung** - Das Projekt darf nicht unter eigenem Namen oder anderer Autorenschaft veröffentlicht werden
+
+- ❌ **Modifizierte Verbreitung** - Veränderte oder abgeleitete Versionen dürfen ohne ausdrückliche Genehmigung nicht verbreitet werden---
+
+- ❌ **Integration in kommerzielle Produkte** - Die Anwendung oder Teile davon dürfen nicht in kommerzielle Produkte oder Dienstleistungen integriert werden
+
+- ❌ **Derivative kommerzielle Werke** - Die Erstellung kommerzieller Produkte basierend auf dieser Anwendung ist untersagt### Neue Features hinzufügen
+
+
+
+---## API Endpoints 🔌
+
+
+
+### 📧 Lizenzierung & Genehmigungen1. Backend Endpoint in `server.js` erstellen
+
+
+
+Für jegliche andere Verwendungsform - insbesondere für:### Tasks2. API Service in `src/services/api.js` erweitern
+
+
+
+- 🤝 **Kommerzielle Lizenzierung**- `GET /api/tasks` - Alle Tasks abrufen3. Pinia Store Action in `src/stores/personal.js` hinzufügen
+
+- 🔄 **Weiterverwendung des Quellcodes**
+
+- 🔗 **Integration in kommerzielle Projekte**- `POST /api/tasks` - Neue Task erstellen4. Vue Komponente in `src/views/` erstellen
+
+- ✏️ **Modifikation und Umverteilung**
+
+- 📦 **Verwendung als Basis für eigene Produkte**- `PUT /api/tasks/:id` - Task aktualisieren5. Route in `src/router/index.js` registrieren
+
+
+
+**Kontaktieren Sie bitte direkt:**- `DELETE /api/tasks/:id` - Task löschen
+
+
+
+```### Best Practices
+
+📧 E-Mail: info@hasanyueksel.de
+
+🐙 GitHub: https://github.com/ctacont### Events, Notes, Contacts, Transactions, Goals, Wellbeing- Verwende `<script setup>` Syntax in Vue 3
+
+```
+
+Ähnliche REST API Endpoints verfügbar- Nutze Pinia für State Management
+
+Alle Lizenzanfragen werden individuell geprüft und können unter entsprechenden Bedingungen bewilligt werden.
+
+- Implementiere Fehlerbehandlung in API Calls
+
+---
+
+---- Teste auf verschiedenen Bildschirmgrößen
+
+### ⚖️ Rechtliche Konsequenzen
+
+
+
+Die unbefugte kommerzielle Nutzung oder Verbreitung verstößt gegen geltendes Urheberrecht und kann zu rechtlichen Konsequenzen führen, einschließlich:
+
+- Zivilrechtliche Schadensersatzforderungen## Projektstruktur 📁## GitHub Release 📤
+
+- Unterlassungsansprüche
+
+- Abmahnung und Vertragsstrafen
+
+
+
+---```### Setup für GitHub
+
+
+
+## Support & Fragen 💬Personal_Management_Vue3/
+
+
+
+Bei Fragen oder Problemen:├── data/                    # JSON Datendateien1. **Git initialisieren (falls nicht bereits geschehen)**
+
+1. Konsultiere die lokalen Dokumentationsdateien
+
+2. Öffne ein Issue auf GitHub├── dist/                    # Production Build```bash
+
+3. Kontaktiere den Entwickler direkt bei Lizenzfragen
+
+├── public/                  # Statische Assetsgit init
+
+---
+
+├── src/git add .
+
+## Credits 🙏
+
+│   ├── components/         # Vue-Komponentengit commit -m "Initial commit: Personal Management System"
+
+**Entwickelt mit:**
+
+- Vue 3 & Composition API│   ├── views/              # Seiten-Komponenten```
+
+- Express.js & Node.js
+
+- Tailwind CSS│   ├── stores/             # Pinia State Management
+
+- Pinia State Management
+
 │   ├── services/           # API Service Layer2. **Remote Repository hinzufügen**
+
+**Gehostet auf:** Render.com
 
 │   ├── router/             # Vue Router Config```bash
 
+**Entwickler:** Hasan Yüksel
+
 │   ├── App.vue             # Root Componentgit remote add origin https://github.com/YOUR_USERNAME/Personal_Management_Vue3.git
+
+**© 2025 Hasan Yüksel - Alle Rechte vorbehalten**
 
 │   ├── main.js             # Entry Point```
 
+---
+
 │   └── style.css           # Global Styles
 
+**Viel Spaß beim Testen!** 🎉
+
 ├── server.js               # Express Server3. **Zu main Branch pushen**
+
+Teile dein Feedback und Verbesserungsvorschläge!
 
 ├── vite.config.js          # Vite Konfiguration```bash
 
