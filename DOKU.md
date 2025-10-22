@@ -17,7 +17,7 @@ Ein umfassendes Personal Management System mit Vue 3, Tailwind CSS und einem Nod
 ## 📁 Projektstruktur
 
 ```
-Personal_Management_zencoder/
+Personal_Management_Vue3/
 ├── data/                          # JSON-Datenspeicher
 │   ├── tasks.json                # Aufgaben-Daten
 │   ├── events.json               # Termin-Daten

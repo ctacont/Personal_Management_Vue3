@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Personal Management System 📋
 
 Eine vollständige Personal-Management-Anwendung built mit **Vue 3**, **Tailwind CSS**, **Pinia** und **Express.js**.
@@ -39,8 +40,8 @@ Eine vollständige Personal-Management-Anwendung built mit **Vue 3**, **Tailwind
 
 1. **Repository klonen**
 ```bash
-git clone https://github.com/YOUR_USERNAME/Personal_Management_zencoder.git
-cd Personal_Management_zencoder
+git clone https://github.com/YOUR_USERNAME/Personal_Management_Vue3.git
+cd Personal_Management_Vue3
 ```
 
 2. **Dependencies installieren**
@@ -109,7 +110,7 @@ _(Ähnliche Endpoints für Notes, Contacts, Transactions, Goals und Wellbeing)_
 ## Struktur 📁
 
 ```
-Personal_Management_zencoder/
+Personal_Management_Vue3/
 ├── data/                    # JSON Datendateien
 ├── public/                  # Statische Assets
 ├── src/
@@ -155,7 +156,7 @@ git commit -m "Initial commit: Personal Management System"
 
 2. **Remote Repository hinzufügen**
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/Personal_Management_zencoder.git
+git remote add origin https://github.com/YOUR_USERNAME/Personal_Management_Vue3.git
 ```
 
 3. **Zu main Branch pushen**
@@ -213,3 +214,7 @@ Bei Fragen oder Problemen bitte ein Issue auf GitHub öffnen.
 
 **Happy Coding!** 🎉
 
+=======
+# Personal_Management_Vue3
+Personal Management with Vue3 - REST API - JSON
+>>>>>>> 9c7deb47d2636bcec3c8e8ddba3bdaca3535ea0b

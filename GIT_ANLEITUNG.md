@@ -29,7 +29,7 @@ Ein "Repository" ist ein Ordner für dein Projekt auf GitHub.
 2. Oben rechts → Klick auf dein Profilbild → "Your repositories"
 3. Klick auf grünen Button "New"
 4. Gib ein:
-   - **Repository name**: `Personal_Management_zencoder`
+   - **Repository name**: `Personal_Management_Vue3`
    - **Description**: `Eine Personal-Management-App mit Vue 3`
    - **Public/Private**: Wähle "Public" (damit andere es sehen können)
    - Lass "Add .gitignore" und "Add a license" UNangehakt!
@@ -37,7 +37,7 @@ Ein "Repository" ist ein Ordner für dein Projekt auf GitHub.
 
 **Wichtig:** Du siehst jetzt eine Seite mit deinem Repository-Link:
 ```
-https://github.com/DEIN_USERNAME/Personal_Management_zencoder.git
+https://github.com/DEIN_USERNAME/Personal_Management_Vue3.git
 ```
 
 **Speichere diese URL ab!** 💾
@@ -49,7 +49,7 @@ https://github.com/DEIN_USERNAME/Personal_Management_zencoder.git
 Git muss wissen, wer du bist. Öffne die **PowerShell** und gib Folgendes ein:
 
 ```powershell
-git config --global user.name "Hasan Yüksel"
+git config --global user.name "gitUSERNAME"
 ```
 
 Dann:
@@ -129,7 +129,7 @@ https://github.com/DEIN_USERNAME/Personal_Management_zencoder.git
 Gib jetzt ein (ERSETZE DEIN_USERNAME):
 
 ```powershell
-git remote add origin https://github.com/DEIN_USERNAME/Personal_Management_zencoder.git
+git remote add origin https://github.com/DEIN_USERNAME/Personal_Management_Vue3.git
 ```
 
 **Was macht das?**
@@ -177,7 +177,7 @@ Are you sure you want to continue connecting (yes/no)?
 
 ## Schritt 10: GitHub Release erstellen 🎉
 
-Jetzt gehst du zu https://github.com/DEIN_USERNAME/Personal_Management_zencoder
+Jetzt gehst du zu https://github.com/DEIN_USERNAME/Personal_Management_Vue3
 
 1. Oben siehst du "Releases" → Klick drauf
 2. Klick auf "Create a new release"
@@ -199,7 +199,7 @@ Jetzt gehst du zu https://github.com/DEIN_USERNAME/Personal_Management_zencoder
    - Wohlbefinden
 
    ## Installation
-   1. Clone: git clone https://github.com/DEIN_USERNAME/Personal_Management_zencoder.git
+   1. Clone: git clone https://github.com/DEIN_USERNAME/Personal_Management_Vue3.git
    2. npm install
    3. npm run dev:all
    4. Open: http://localhost:5173
@@ -232,7 +232,7 @@ git add .
 git commit -m "Initial commit: Personal Management System v1.0.0"
 
 # 6. Mit GitHub verbinden (DEIN_USERNAME ersetzen!):
-git remote add origin https://github.com/DEIN_USERNAME/Personal_Management_zencoder.git
+git remote add origin https://github.com/DEIN_USERNAME/Personal_Management_Vue3.git
 
 # 7. Main Branch:
 git branch -M main

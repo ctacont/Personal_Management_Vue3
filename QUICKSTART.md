@@ -10,7 +10,7 @@
 
 #### 1. **Projekt clonen/öffnen**
 ```bash
-cd "Personal_Management_zencoder"
+cd "Personal_Management_Vue3"
 ```
 
 #### 2. **Dependencies installieren**

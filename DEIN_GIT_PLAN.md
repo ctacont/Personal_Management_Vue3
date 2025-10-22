@@ -2,7 +2,7 @@
 
 **GitHub Username:** ctacont
 **Email:** ctacont@freenet.de
-**Repository:** Personal_Management_zencoder
+**Repository:** Personal_Management_Vue3
 
 ---
 
@@ -94,7 +94,7 @@ Drücke **Enter** ✅
 **WICHTIG:** Ersetze nichts! Das ist für DICH vorbereitet:
 
 ```powershell
-git remote add origin https://github.com/ctacont/Personal_Management_zencoder.git
+git remote add origin https://github.com/ctacont/Personal_Management_Vue3.git
 ```
 
 Drücke **Enter** ✅
@@ -147,7 +147,7 @@ Branch 'main' is set up to track remote branch 'main' from 'origin'.
 
 Jetzt gehst du auf:
 ```
-https://github.com/ctacont/Personal_Management_zencoder
+https://github.com/ctacont/Personal_Management_Vue3
 ```
 
 1. **Oben auf der Seite** siehst du mehrere Tabs: "Code", "Issues", "Pull requests", **"Releases"**
@@ -172,7 +172,7 @@ https://github.com/ctacont/Personal_Management_zencoder
    - Wohlbefinden
 
    ## Installation 🚀
-   1. Clone: git clone https://github.com/ctacont/Personal_Management_zencoder.git
+   1. Clone: git clone https://github.com/ctacont/Personal_Management_Vue3.git
    2. npm install
    3. npm run dev:all
    4. Open: http://localhost:5173
@@ -195,7 +195,7 @@ cd "c:\Users\lenovo\Documents\CODING\ZENCODER Projekte\Personal_Management_zenco
 git init
 git add .
 git commit -m "Initial commit: Personal Management System v1.0.0"
-git remote add origin https://github.com/ctacont/Personal_Management_zencoder.git
+git remote add origin https://github.com/ctacont/Personal_Management_Vue3.git
 git branch -M main
 git push -u origin main
 ```

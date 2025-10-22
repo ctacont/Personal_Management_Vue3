@@ -11,7 +11,7 @@ Das Personal Management System wurde vollständig mit **Vue 3**, **Tailwind CSS*
 ## 📁 Verzeichnisstruktur
 
 ```
-📦 Personal_Management_zencoder/
+📦 Personal_Management_Vue3/
  ├── 📂 data/                          ← Persistente JSON-Datenspeicherung
  │   ├── contacts.json               ← Kontaktdaten
  │   ├── events.json                 ← Termine & Kalendereinträge
