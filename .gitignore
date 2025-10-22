@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+# Internal Documentation & Setup Files (lokale Anleitung)
+GIT_ANLEITUNG.md
+CHECKLISTE.md
+DEIN_GIT_PLAN.md
+DOKU.md
+QUICKSTART.md
+IMPLEMENTATION.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
