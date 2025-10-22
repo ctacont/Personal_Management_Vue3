@@ -61,11 +61,21 @@ app.get('/api/tasks', async (req, res) => {
 })
 
 app.post('/api/tasks', async (req, res) => {
-  const data = await readJsonFile('tasks.json')
-  if (!data.tasks) data.tasks = []
-  data.tasks.push(req.body)
-  const success = await writeJsonFile('tasks.json', data)
-  res.json({ success, task: req.body })
+  try {
+    const data = await readJsonFile('tasks.json')
+    if (!data || !data.tasks) {
+      const newData = { tasks: [req.body] }
+      await writeJsonFile('tasks.json', newData)
+      res.json({ success: true, task: req.body })
+    } else {
+      data.tasks.push(req.body)
+      const success = await writeJsonFile('tasks.json', data)
+      res.json({ success, task: req.body })
+    }
+  } catch (error) {
+    console.error('Error adding task:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
 })
 
 app.put('/api/tasks/:id', async (req, res) => {
@@ -92,11 +102,21 @@ app.get('/api/events', async (req, res) => {
 })
 
 app.post('/api/events', async (req, res) => {
-  const data = await readJsonFile('events.json')
-  if (!data.events) data.events = []
-  data.events.push(req.body)
-  await writeJsonFile('events.json', data)
-  res.json({ success: true, event: req.body })
+  try {
+    const data = await readJsonFile('events.json')
+    if (!data || !data.events) {
+      const newData = { events: [req.body] }
+      await writeJsonFile('events.json', newData)
+      res.json({ success: true, event: req.body })
+    } else {
+      data.events.push(req.body)
+      await writeJsonFile('events.json', data)
+      res.json({ success: true, event: req.body })
+    }
+  } catch (error) {
+    console.error('Error adding event:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
 })
 
 app.put('/api/events/:id', async (req, res) => {
@@ -123,11 +143,21 @@ app.get('/api/notes', async (req, res) => {
 })
 
 app.post('/api/notes', async (req, res) => {
-  const data = await readJsonFile('notes.json')
-  if (!data.notes) data.notes = []
-  data.notes.push(req.body)
-  await writeJsonFile('notes.json', data)
-  res.json({ success: true, note: req.body })
+  try {
+    const data = await readJsonFile('notes.json')
+    if (!data || !data.notes) {
+      const newData = { notes: [req.body] }
+      await writeJsonFile('notes.json', newData)
+      res.json({ success: true, note: req.body })
+    } else {
+      data.notes.push(req.body)
+      await writeJsonFile('notes.json', data)
+      res.json({ success: true, note: req.body })
+    }
+  } catch (error) {
+    console.error('Error adding note:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
 })
 
 app.put('/api/notes/:id', async (req, res) => {
@@ -154,11 +184,21 @@ app.get('/api/contacts', async (req, res) => {
 })
 
 app.post('/api/contacts', async (req, res) => {
-  const data = await readJsonFile('contacts.json')
-  if (!data.contacts) data.contacts = []
-  data.contacts.push(req.body)
-  await writeJsonFile('contacts.json', data)
-  res.json({ success: true, contact: req.body })
+  try {
+    const data = await readJsonFile('contacts.json')
+    if (!data || !data.contacts) {
+      const newData = { contacts: [req.body] }
+      await writeJsonFile('contacts.json', newData)
+      res.json({ success: true, contact: req.body })
+    } else {
+      data.contacts.push(req.body)
+      await writeJsonFile('contacts.json', data)
+      res.json({ success: true, contact: req.body })
+    }
+  } catch (error) {
+    console.error('Error adding contact:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
 })
 
 app.put('/api/contacts/:id', async (req, res) => {
@@ -185,11 +225,21 @@ app.get('/api/transactions', async (req, res) => {
 })
 
 app.post('/api/transactions', async (req, res) => {
-  const data = await readJsonFile('transactions.json')
-  if (!data.transactions) data.transactions = []
-  data.transactions.push(req.body)
-  await writeJsonFile('transactions.json', data)
-  res.json({ success: true, transaction: req.body })
+  try {
+    const data = await readJsonFile('transactions.json')
+    if (!data || !data.transactions) {
+      const newData = { transactions: [req.body] }
+      await writeJsonFile('transactions.json', newData)
+      res.json({ success: true, transaction: req.body })
+    } else {
+      data.transactions.push(req.body)
+      await writeJsonFile('transactions.json', data)
+      res.json({ success: true, transaction: req.body })
+    }
+  } catch (error) {
+    console.error('Error adding transaction:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
 })
 
 app.put('/api/transactions/:id', async (req, res) => {
@@ -216,11 +266,21 @@ app.get('/api/goals', async (req, res) => {
 })
 
 app.post('/api/goals', async (req, res) => {
-  const data = await readJsonFile('goals.json')
-  if (!data.goals) data.goals = []
-  data.goals.push(req.body)
-  await writeJsonFile('goals.json', data)
-  res.json({ success: true, goal: req.body })
+  try {
+    const data = await readJsonFile('goals.json')
+    if (!data || !data.goals) {
+      const newData = { goals: [req.body] }
+      await writeJsonFile('goals.json', newData)
+      res.json({ success: true, goal: req.body })
+    } else {
+      data.goals.push(req.body)
+      await writeJsonFile('goals.json', data)
+      res.json({ success: true, goal: req.body })
+    }
+  } catch (error) {
+    console.error('Error adding goal:', error)
+    res.status(500).json({ success: false, error: error.message })
+  }
 })
 
 app.put('/api/goals/:id', async (req, res) => {
