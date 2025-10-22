@@ -1,6 +1,7 @@
 {
-  "name": "personal-management",
-  "version": "0.0.0",
+  "name": "personal-management-vue3",
+  "version": "1.0.0",
+  "description": "A comprehensive personal management application built with Vue 3, Express, and Tailwind CSS",
   "private": true,
   "type": "module",
   "scripts": {
