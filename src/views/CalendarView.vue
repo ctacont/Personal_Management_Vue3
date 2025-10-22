@@ -273,7 +273,6 @@ export default {
 
     const goToToday = () => {
       currentDate.value = new Date()
-      selectedDate.value = new Date()
       newEvent.value.date = format(new Date(), 'yyyy-MM-dd')
     }
 
