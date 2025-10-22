@@ -27,6 +27,161 @@ const ensureDataDir = async () => {
   }
 }
 
+// Initialize with default test data
+const initializeDefaultData = async () => {
+  const defaultData = {
+    tasks: [
+      {
+        "id": "t1",
+        "title": "Quartalsplanung vorbereiten",
+        "description": "Präsentation für das Strategie-Meeting erstellen",
+        "dueDate": "2025-10-24",
+        "category": "Arbeit",
+        "priority": "Hoch",
+        "status": "In Bearbeitung",
+        "progress": 70,
+        "tags": ["Präsentation", "Management"]
+      },
+      {
+        "id": "t2",
+        "title": "Fitness-Check buchen",
+        "description": "Termin im Fitnessstudio vereinbaren",
+        "dueDate": "2025-10-26",
+        "category": "Gesundheit",
+        "priority": "Mittel",
+        "status": "Offen",
+        "progress": 10,
+        "tags": ["Routine"]
+      },
+      {
+        "id": "t3",
+        "title": "Geburtstagsgeschenk besorgen",
+        "description": "Geschenk für Mia organisieren",
+        "dueDate": "2025-10-21",
+        "category": "Privat",
+        "priority": "Hoch",
+        "status": "Überfällig",
+        "progress": 0,
+        "tags": ["Familie"]
+      }
+    ],
+    events: [
+      {
+        "id": "e1",
+        "title": "Yoga-Kurs",
+        "date": "2025-10-22",
+        "time": "18:00",
+        "category": "Freizeit",
+        "description": "Wöchentlicher Yoga-Kurs",
+        "location": "Studio Balance"
+      },
+      {
+        "id": "e2",
+        "title": "Team Meeting",
+        "date": "2025-10-23",
+        "time": "14:30",
+        "category": "Arbeit",
+        "description": "Wöchentliches Team Sync",
+        "location": "Conference Room A"
+      }
+    ],
+    notes: [
+      {
+        "id": 1,
+        "title": "Projektideen",
+        "content": "- App für Terminmanagement\n- Dashboard für Analytics\n- Mobile Version",
+        "createdAt": "2025-10-20"
+      },
+      {
+        "id": 2,
+        "title": "Einkaufsliste",
+        "content": "- Milch\n- Brot\n- Käse\n- Tomaten",
+        "createdAt": "2025-10-22"
+      }
+    ],
+    contacts: [
+      {
+        "id": 1,
+        "name": "Max Mustermann",
+        "email": "max@example.com",
+        "phone": "+49 123 456789",
+        "company": "Tech Corp",
+        "category": "Arbeit"
+      },
+      {
+        "id": 2,
+        "name": "Anna Schmidt",
+        "email": "anna@example.com",
+        "phone": "+49 987 654321",
+        "company": "Design Studio",
+        "category": "Freunde"
+      }
+    ],
+    transactions: [
+      {
+        "id": 1,
+        "type": "Einnahme",
+        "category": "Gehalt",
+        "amount": 3500,
+        "date": "2025-10-20",
+        "description": "Monatliches Gehalt"
+      },
+      {
+        "id": 2,
+        "type": "Ausgabe",
+        "category": "Lebensmittel",
+        "amount": 85.50,
+        "date": "2025-10-22",
+        "description": "Supermarkt"
+      }
+    ],
+    goals: [
+      {
+        "id": 1,
+        "title": "Fitness verbessern",
+        "description": "3x pro Woche ins Gym gehen",
+        "deadline": "2025-12-31",
+        "progress": 45,
+        "category": "Gesundheit"
+      },
+      {
+        "id": 2,
+        "title": "Programmier-Skills",
+        "description": "Vue 3 & TypeScript lernen",
+        "deadline": "2025-11-30",
+        "progress": 75,
+        "category": "Lernen"
+      }
+    ],
+    wellbeing: {
+      "sleepEntries": [
+        { "id": 1, "date": "2025-10-20", "hours": 7.5, "quality": "Gut" },
+        { "id": 2, "date": "2025-10-21", "hours": 6.5, "quality": "Mittel" }
+      ],
+      "moods": [
+        { "id": 1, "date": "2025-10-20", "mood": "Glücklich", "energy": 8 },
+        { "id": 2, "date": "2025-10-21", "mood": "Müde", "energy": 5 }
+      ],
+      "activities": [
+        { "id": 1, "date": "2025-10-20", "activity": "Yoga", "duration": 60 }
+      ]
+    }
+  }
+
+  try {
+    await writeJsonFile('tasks.json', { tasks: defaultData.tasks })
+    await writeJsonFile('events.json', { events: defaultData.events })
+    await writeJsonFile('notes.json', { notes: defaultData.notes })
+    await writeJsonFile('contacts.json', { contacts: defaultData.contacts })
+    await writeJsonFile('transactions.json', { transactions: defaultData.transactions })
+    await writeJsonFile('goals.json', { goals: defaultData.goals })
+    await writeJsonFile('wellbeing.json', defaultData.wellbeing)
+    console.log('✅ Default test data initialized')
+  } catch (error) {
+    console.error('❌ Error initializing default data:', error)
+  }
+}
+
 // Helper function to get file path
 const getFilePath = (filename) => path.join(dataDir, filename)
 
@@ -343,9 +498,13 @@ app.get('*', (req, res) => {
 })
 
 // Start server
-ensureDataDir().then(() => {
+ensureDataDir().then(async () => {
+  // Initialize with default test data on every start (for demo purposes)
+  await initializeDefaultData()
+  
   app.listen(PORT, () => {
     console.log(`✅ Personal Management API server running on http://localhost:${PORT}`)
     console.log(`📁 Data directory: ${dataDir}`)
+    console.log(`🔄 Test data reset enabled - will reinitialize on server restart`)
   })
 })
