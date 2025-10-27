@@ -51,8 +51,6 @@ Die Demo läuft auf einem kostenlosen Server mit **Test-Daten**:- **Dashboard** 
 
 ---
 
-- **Ziele** - Setze persönliche Ziele und verfolge deinen Fortschritt
-
 ## Features ✨
 
 Die Demo läuft auf einem kostenlosen Server mit **Test-Daten**:- **Wohlbefinden** - Tracke Schlaf, Stimmung und Aktivitäten
