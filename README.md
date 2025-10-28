@@ -1,6 +1,6 @@
 # Personal Management System 📋# Personal Management System 📋
 
-(c) 2025 by Hasan Yüksel
+> © 2025 by Hasan Yüksel. All rights reserved.
 
 Eine vollständige Personal-Management-Anwendung built mit **Vue 3**, **Tailwind CSS**, **Pinia** und **Express.js**.# Personal Management System 📋
 
