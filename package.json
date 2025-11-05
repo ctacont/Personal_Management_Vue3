@@ -9,7 +9,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "server": "node server.js",
-    "dev:all": "concurrently \"npm run server\" \"npm run dev\""
+    "dev:all": "concurrently \"npm run server\" \"npm run dev\"",
+    "build:github": "NODE_ENV=production vite build",
+    "deploy:github": "npm run build:github && gh-pages -d dist"
   },
   "dependencies": {
     "cors": "^2.8.5",
