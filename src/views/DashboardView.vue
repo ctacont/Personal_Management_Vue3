@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import { format, parseISO } from 'date-fns'
 import { de } from 'date-fns/locale'
 import { usePersonalStore } from '../stores/personal'
+import ServiceInfo from '../components/ServiceInfo.vue'
 
 const store = usePersonalStore()
 const selectedEvent = ref(null)
@@ -80,6 +81,9 @@ const deleteTask = async (id) => {
 
 <template>
   <div class="space-y-8">
+    <!-- Service Info Component -->
+    <ServiceInfo />
+    
     <section class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
       <div class="rounded-3xl bg-white p-6 shadow-sm">
         <p class="text-sm font-medium text-gray-500">Offene Aufgaben</p>

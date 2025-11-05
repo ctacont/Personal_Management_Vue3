@@ -1,12 +1,30 @@
 // API Service für Kommunikation mit dem Backend
-// Dynamische URL basierend auf Environment
-const API_BASE_URL = 
-  import.meta.env.MODE === 'production'
-    ? '/api'  // Bei Production: relative URL (same host)
-    : 'http://localhost:3000/api'  // Bei Development: localhost
+// Automatischer Fallback zu localStorage bei GitHub Pages
+import { localStorageService } from './localStorage.js'
 
-// Generic fetch helper
+// Environment detection
+const isGitHubPages = window.location.hostname.includes('github.io')
+const isProduction = import.meta.env.MODE === 'production'
+
+// API Base URL
+const API_BASE_URL = 
+  isGitHubPages 
+    ? null  // GitHub Pages: use localStorage
+    : isProduction
+      ? '/api'  // Production with server: relative URL
+      : 'http://localhost:3000/api'  // Development: localhost
+
+// Service mode detection
+let serviceMode = 'unknown'
+let useLocalStorage = isGitHubPages
+
+// Generic fetch helper with fallback
 const fetchAPI = async (method, endpoint, data = null) => {
+  // On GitHub Pages, always use localStorage
+  if (useLocalStorage) {
+    throw new Error('Using localStorage fallback')
+  }
+
   try {
     const options = {
       method,
@@ -25,15 +43,35 @@ const fetchAPI = async (method, endpoint, data = null) => {
       throw new Error(`API Error: ${response.statusText}`)
     }
 
+    serviceMode = 'server'
     return await response.json()
   } catch (error) {
-    console.error(`API Error [${method} ${endpoint}]:`, error)
+    console.warn(`API Error [${method} ${endpoint}]:`, error.message)
+    // Fallback to localStorage
+    useLocalStorage = true
+    serviceMode = 'localStorage'
     throw error
   }
 }
 
-// Export API methods
-export const apiService = {
+// Service selector: returns server API or localStorage API
+const getService = () => {
+  if (useLocalStorage || isGitHubPages) {
+    if (serviceMode === 'unknown') {
+      serviceMode = 'localStorage'
+      console.log('🔄 Using localStorage for data persistence (GitHub Pages mode)')
+      localStorageService.init()
+    }
+    return localStorageService
+  }
+  return serverAPI
+}
+
+// Server API methods
+const serverAPI = {
+  // Health check
+  checkHealth: () => fetchAPI('GET', '/health'),
+
   // Tasks
   getTasks: () => fetchAPI('GET', '/tasks'),
   addTask: (task) => fetchAPI('POST', '/tasks', task),
@@ -74,8 +112,76 @@ export const apiService = {
   getWellbeing: () => fetchAPI('GET', '/wellbeing'),
   addSleepEntry: (entry) => fetchAPI('POST', '/wellbeing/sleep', entry),
   addMoodEntry: (entry) => fetchAPI('POST', '/wellbeing/mood', entry),
-  addActivityEntry: (entry) => fetchAPI('POST', '/wellbeing/activity', entry),
+  addActivityEntry: (entry) => fetchAPI('POST', '/wellbeing/activity', entry)
+}
 
-  // Health check
-  checkHealth: () => fetchAPI('GET', '/health')
+// Export unified API service
+export const apiService = {
+  // Health check with automatic fallback detection
+  async checkHealth() {
+    try {
+      if (isGitHubPages) {
+        useLocalStorage = true
+        return localStorageService.checkHealth()
+      }
+      
+      const result = await serverAPI.checkHealth()
+      serviceMode = 'server'
+      console.log('🚀 Connected to server API')
+      return result
+    } catch (error) {
+      useLocalStorage = true
+      serviceMode = 'localStorage'
+      console.log('🔄 Falling back to localStorage')
+      localStorageService.init()
+      return localStorageService.checkHealth()
+    }
+  },
+
+  // Get current service mode
+  getServiceMode: () => serviceMode,
+  
+  // Get service info
+  getServiceInfo: () => ({
+    mode: serviceMode,
+    isGitHubPages,
+    useLocalStorage,
+    apiBaseUrl: API_BASE_URL
+  }),
+
+  // Unified API methods - automatically route to correct service
+  getTasks: () => getService().getTasks(),
+  addTask: (task) => getService().addTask(task),
+  updateTask: (id, task) => getService().updateTask(id, task),
+  deleteTask: (id) => getService().deleteTask(id),
+
+  getEvents: () => getService().getEvents(),
+  addEvent: (event) => getService().addEvent(event),
+  updateEvent: (id, event) => getService().updateEvent(id, event),
+  deleteEvent: (id) => getService().deleteEvent(id),
+
+  getNotes: () => getService().getNotes(),
+  addNote: (note) => getService().addNote(note),
+  updateNote: (id, note) => getService().updateNote(id, note),
+  deleteNote: (id) => getService().deleteNote(id),
+
+  getContacts: () => getService().getContacts(),
+  addContact: (contact) => getService().addContact(contact),
+  updateContact: (id, contact) => getService().updateContact(id, contact),
+  deleteContact: (id) => getService().deleteContact(id),
+
+  getTransactions: () => getService().getTransactions(),
+  addTransaction: (transaction) => getService().addTransaction(transaction),
+  updateTransaction: (id, transaction) => getService().updateTransaction(id, transaction),
+  deleteTransaction: (id) => getService().deleteTransaction(id),
+
+  getGoals: () => getService().getGoals(),
+  addGoal: (goal) => getService().addGoal(goal),
+  updateGoal: (id, goal) => getService().updateGoal(id, goal),
+  deleteGoal: (id) => getService().deleteGoal(id),
+
+  getWellbeing: () => getService().getWellbeing(),
+  addSleepEntry: (entry) => getService().addSleepEntry(entry),
+  addMoodEntry: (entry) => getService().addMoodEntry(entry),
+  addActivityEntry: (entry) => getService().addActivityEntry(entry)
 }

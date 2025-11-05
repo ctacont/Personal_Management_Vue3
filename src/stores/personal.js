@@ -70,10 +70,21 @@ export const usePersonalStore = defineStore('personal', {
     // Initialize data from API
     async initializeData() {
       this.loading = true
+      this.error = null
+      
       try {
-        // Check API health
-        await apiService.checkHealth()
+        // Check API health and determine service mode
+        const healthCheck = await apiService.checkHealth()
         this.apiReady = true
+
+        const serviceInfo = apiService.getServiceInfo()
+        console.log('🔧 Service Info:', serviceInfo)
+        
+        if (serviceInfo.mode === 'localStorage') {
+          console.log('📱 Running in GitHub Pages mode with localStorage')
+        } else {
+          console.log('🚀 Connected to server API')
+        }
 
         // Load all data
         await Promise.all([
@@ -86,10 +97,11 @@ export const usePersonalStore = defineStore('personal', {
           this.loadWellbeing()
         ])
         
-        this.error = null
+        console.log('✅ Data initialization completed successfully')
       } catch (err) {
-        this.error = 'API-Verbindung fehlgeschlagen. Verwende lokale Daten.'
-        console.error('API Initialization Error:', err)
+        this.apiReady = false
+        this.error = 'Fehler beim Laden der Daten. Bitte Seite neu laden.'
+        console.error('❌ Data initialization failed:', err)
       } finally {
         this.loading = false
       }
